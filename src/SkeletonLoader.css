@@ -1,0 +1,58 @@
+
+.skeleton-loader-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start;
+    height: 100vh; /* Make sure it takes up the full screen height */
+    overflow: hidden;
+    align-items: center; /* Center horizontally */
+  }
+  
+  .skeleton-card {
+    background-color: #444;
+    height: 120px;
+    width: 100%;
+    max-width: 800px; /* Optional, you can control the max width */
+    border-radius: 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .skeleton-title,
+  .skeleton-description,
+  .skeleton-link {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  .skeleton-title {
+    height: 20px;
+    width: 80%;
+    margin: 10px;
+  }
+  
+  .skeleton-description {
+    height: 16px;
+    width: 90%;
+    margin: 10px;
+  }
+  
+  .skeleton-link {
+    height: 16px;
+    width: 50%;
+    margin: 10px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #444;
+    }
+    50% {
+      background-color: #666;
+    }
+    100% {
+      background-color: #444;
+    }
+  }
+  
